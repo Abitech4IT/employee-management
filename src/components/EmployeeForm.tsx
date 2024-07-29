@@ -77,96 +77,102 @@ function EmployeeForm() {
               </Button>
             </Stack>
           </Grid>
-          <Grid item xs={12} sm={12} md={6} lg={6}>
-            <Stack spacing={0.5} m={2}>
-              <InputLabel>First Name</InputLabel>
-              <TextField
-                required
-                name="firstName"
-                placeholder="First Name"
-                fullWidth
-                size="small"
-                value={firstName}
-                onChange={(e) => setFirstName(() => e.target.value)}
-              />
-            </Stack>
-          </Grid>
-          <Grid item xs={12} sm={12} md={6} lg={6}>
-            <Stack spacing={0.5} m={2}>
-              <InputLabel>Last Name</InputLabel>
-              <TextField
-                required
-                name="lastName"
-                placeholder="Last Name"
-                fullWidth
-                size="small"
-                value={lastName}
-                onChange={(e) => setLastName(() => e.target.value)}
-              />
-            </Stack>
-          </Grid>
-          <Grid item xs={12} sm={12} md={6} lg={6}>
-            <Stack spacing={0.5} m={2}>
-              <InputLabel>Email</InputLabel>
-              <TextField
-                required
-                name="email"
-                placeholder="Email"
-                fullWidth
-                size="small"
-                value={email}
-                onChange={(e) => setEmail(() => e.target.value)}
-              />
-            </Stack>
-          </Grid>
-          <Grid item xs={12} sm={12} md={6} lg={6}>
-            <Stack spacing={0.5} m={2}>
-              <InputLabel>Address</InputLabel>
-              <TextField
-                required
-                name="address"
-                placeholder="Address"
-                fullWidth
-                size="small"
-                value={address}
-                onChange={(e) => setAddress(() => e.target.value)}
-              />
-            </Stack>
-          </Grid>
-          <Grid item xs={12} sm={12} md={6} lg={6}>
-            <Stack spacing={0.5} m={2}>
-              <InputLabel>Mobile</InputLabel>
-              <TextField
-                required
-                name="mobile"
-                placeholder="Mobile"
-                fullWidth
-                size="small"
-                value={mobile}
-                onChange={(e) => setMobile(() => e.target.value)}
-              />
-            </Stack>
-          </Grid>
-          <Grid item xs={12} sm={12} md={6} lg={6}>
-            <Stack spacing={0.5} m={2}>
-              <InputLabel>Gender</InputLabel>
-              <TextField
-                select
-                size="small"
-                value={gender}
-                onChange={(e) => setGender(() => e.target.value)}
-              >
-                <MenuItem value="male">Male</MenuItem>
-                <MenuItem value="female">Female</MenuItem>
-              </TextField>
-            </Stack>
-          </Grid>
-          <Grid item xs={3}>
-            <Stack spacing={0.5} m={2}>
-              <Button variant="contained" onClick={handleSubmit}>
-                Submit
-              </Button>
-            </Stack>
+          <Grid item xs={12} sm={12} md={12} lg={12}>
+            <Box component="form" onSubmit={handleSubmit}>
+              <Grid container>
+                <Grid item xs={12} sm={12} md={6} lg={6}>
+                  <Stack spacing={0.5} m={2}>
+                    <InputLabel>First Name</InputLabel>
+                    <TextField
+                      required
+                      name="firstName"
+                      placeholder="First Name"
+                      fullWidth
+                      size="small"
+                      value={firstName}
+                      onChange={(e) => setFirstName(() => e.target.value)}
+                    />
+                  </Stack>
+                </Grid>
+                <Grid item xs={12} sm={12} md={6} lg={6}>
+                  <Stack spacing={0.5} m={2}>
+                    <InputLabel>Last Name</InputLabel>
+                    <TextField
+                      required
+                      name="lastName"
+                      placeholder="Last Name"
+                      fullWidth
+                      size="small"
+                      value={lastName}
+                      onChange={(e) => setLastName(() => e.target.value)}
+                    />
+                  </Stack>
+                </Grid>
+                <Grid item xs={12} sm={12} md={6} lg={6}>
+                  <Stack spacing={0.5} m={2}>
+                    <InputLabel>Email</InputLabel>
+                    <TextField
+                      required
+                      name="email"
+                      placeholder="Email"
+                      fullWidth
+                      size="small"
+                      value={email}
+                      onChange={(e) => setEmail(() => e.target.value)}
+                    />
+                  </Stack>
+                </Grid>
+                <Grid item xs={12} sm={12} md={6} lg={6}>
+                  <Stack spacing={0.5} m={2}>
+                    <InputLabel>Address</InputLabel>
+                    <TextField
+                      required
+                      name="address"
+                      placeholder="Address"
+                      fullWidth
+                      size="small"
+                      value={address}
+                      onChange={(e) => setAddress(() => e.target.value)}
+                    />
+                  </Stack>
+                </Grid>
+                <Grid item xs={12} sm={12} md={6} lg={6}>
+                  <Stack spacing={0.5} m={2}>
+                    <InputLabel>Mobile</InputLabel>
+                    <TextField
+                      required
+                      name="mobile"
+                      placeholder="Mobile"
+                      fullWidth
+                      size="small"
+                      value={mobile}
+                      onChange={(e) => setMobile(() => e.target.value)}
+                    />
+                  </Stack>
+                </Grid>
+                <Grid item xs={12} sm={12} md={6} lg={6}>
+                  <Stack spacing={0.5} m={2}>
+                    <InputLabel>Gender</InputLabel>
+                    <TextField
+                      select
+                      size="small"
+                      value={gender}
+                      onChange={(e) => setGender(() => e.target.value)}
+                    >
+                      <MenuItem value="male">Male</MenuItem>
+                      <MenuItem value="female">Female</MenuItem>
+                    </TextField>
+                  </Stack>
+                </Grid>
+                <Grid item xs={3}>
+                  <Stack spacing={0.5} m={2}>
+                    <Button type="submit" variant="contained">
+                      Submit
+                    </Button>
+                  </Stack>
+                </Grid>
+              </Grid>
+            </Box>
           </Grid>
         </Grid>
       </Paper>

@@ -7,6 +7,17 @@
     "lib": ["ES2020", "DOM", "DOM.Iterable"],
     "module": "ESNext",
     "skipLibCheck": true,
+    "baseUrl": ".",
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "types": [
+      "jest",
+      "node",
+      "@testing-library/jest-dom",
+      "react",
+      "react-dom"
+    ],
+    // "types": ["jest", "node", "@testing-library/jest-dom"],
 
     /* Bundler mode */
     "moduleResolution": "bundler",
@@ -16,6 +27,7 @@
     "moduleDetection": "force",
     "noEmit": true,
     "jsx": "react-jsx",
+    "jsxImportSource": "react",
 
     /* Linting */
     "strict": true,
@@ -23,5 +35,7 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true
   },
-  "include": ["src"]
+  // "include": ["src", "types", "jest.setup.ts"]
+  // "include": ["src", "**/*.ts"]
+  "include": ["src/**/*", "**/*.ts", "**/*.tsx"]
 }
