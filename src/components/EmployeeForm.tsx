@@ -157,6 +157,7 @@ function EmployeeForm() {
                       select
                       size="small"
                       value={gender}
+                      data-testid="mytestId"
                       onChange={(e) => setGender(() => e.target.value)}
                     >
                       <MenuItem value="male">Male</MenuItem>

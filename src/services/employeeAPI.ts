@@ -1,12 +1,7 @@
 import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
 import { EmployeeDetailsResponse, IEmployee } from "../types/employeesType";
 
-// import dotenv from "dotenv";
-
-// dotenv.config();
-
 export const baseUrl = import.meta.env.VITE_APP_BASE_URL;
-// export const baseUrl = process.env.VITE_APP_BASE_URL;
 
 export const employeeAPI = createApi({
   reducerPath: "EmployeeAPI",

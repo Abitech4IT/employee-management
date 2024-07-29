@@ -7,7 +7,7 @@ export default {
   },
   transform: {
     "^.+\\.[tj]sx?$": "babel-jest",
-    // "^.+\\.tsx?$": "ts-jest",
+    "^.+\\.tsx?$": "ts-jest",
     // "^.+\\.(ts|tsx)$": "ts-jest",
   },
   moduleFileExtensions: ["ts", "tsx", "js", "jsx", "json", "node"],
